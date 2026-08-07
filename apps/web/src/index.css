@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 7%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 43 47% 55%;
+    --primary-foreground: 0 0% 7%;
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 43 47% 55%;
+    --accent-foreground: 0 0% 7%;
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14%;
+    --input: 0 0% 12%;
+    --ring: 43 47% 55%;
+    --radius: 0.5rem;
+    --gold: #C9A84C;
+    --gold-dim: #8a6f32;
+    --black: #111111;
+    --white: #FFFFFF;
+    --gray: #888888;
+    --gray-light: #555555;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    background-color: #111111;
+    color: #FFFFFF;
+    font-family: 'Inter', -apple-system, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::-webkit-scrollbar { width: 2px; height: 2px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: #333; }
+}
+
+@layer utilities {
+  .gold { color: #C9A84C; }
+  .gold-border { border-color: #C9A84C; }
+  .gold-bg { background-color: #C9A84C; }
+  .bg-black-primary { background-color: #111111; }
+  .bg-black-secondary { background-color: #1a1a1a; }
+  .bg-black-tertiary { background-color: #222222; }
+  .text-gold { color: #C9A84C; }
+  .text-gray-muted { color: #666666; }
+  .text-gray-light { color: #999999; }
+  .border-gold { border-color: #C9A84C; }
+  .border-subtle { border-color: #2a2a2a; }
+  .font-light-custom { font-weight: 300; }
+  .font-thin-custom { font-weight: 200; }
+  .letter-wide { letter-spacing: 0.08em; }
+  .letter-wider { letter-spacing: 0.15em; }
+}

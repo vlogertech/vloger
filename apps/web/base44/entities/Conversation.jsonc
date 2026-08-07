@@ -1,0 +1,47 @@
+{
+  "name": "Conversation",
+  "type": "object",
+  "properties": {
+    "participant_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "participant_names": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "participant_avatars": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "last_message": {
+      "type": "string"
+    },
+    "last_message_time": {
+      "type": "string"
+    },
+    "unread_count": {
+      "type": "number",
+      "default": 0
+    },
+    "is_group": {
+      "type": "boolean",
+      "default": false
+    },
+    "group_name": {
+      "type": "string"
+    },
+    "group_avatar": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "participant_ids"
+  ]
+}

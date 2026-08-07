@@ -1,0 +1,106 @@
+{
+  "name": "Post",
+  "type": "object",
+  "properties": {
+    "author_id": {
+      "type": "string"
+    },
+    "author_name": {
+      "type": "string"
+    },
+    "author_username": {
+      "type": "string"
+    },
+    "author_avatar": {
+      "type": "string"
+    },
+    "author_verified": {
+      "type": "boolean",
+      "default": false
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "vlog",
+        "voice"
+      ],
+      "default": "vlog"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "video_url": {
+      "type": "string"
+    },
+    "audio_url": {
+      "type": "string"
+    },
+    "thumbnail_url": {
+      "type": "string"
+    },
+    "cover_image_url": {
+      "type": "string"
+    },
+    "hashtags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "mentions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "location": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "number"
+    },
+    "likes_count": {
+      "type": "number",
+      "default": 0
+    },
+    "comments_count": {
+      "type": "number",
+      "default": 0
+    },
+    "shares_count": {
+      "type": "number",
+      "default": 0
+    },
+    "views_count": {
+      "type": "number",
+      "default": 0
+    },
+    "visibility": {
+      "type": "string",
+      "enum": [
+        "public",
+        "followers",
+        "private"
+      ],
+      "default": "public"
+    },
+    "comments_enabled": {
+      "type": "boolean",
+      "default": true
+    },
+    "download_allowed": {
+      "type": "boolean",
+      "default": false
+    },
+    "transcription": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "author_id",
+    "type"
+  ]
+}

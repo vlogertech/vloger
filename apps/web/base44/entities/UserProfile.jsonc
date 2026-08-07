@@ -1,0 +1,76 @@
+{
+  "name": "UserProfile",
+  "type": "object",
+  "properties": {
+    "user_id": {
+      "type": "string"
+    },
+    "username": {
+      "type": "string"
+    },
+    "display_name": {
+      "type": "string"
+    },
+    "avatar_url": {
+      "type": "string"
+    },
+    "banner_url": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "verified": {
+      "type": "boolean",
+      "default": false
+    },
+    "badge_type": {
+      "type": "string",
+      "enum": [
+        "none",
+        "creator",
+        "journalist",
+        "business",
+        "identity"
+      ],
+      "default": "none"
+    },
+    "followers_count": {
+      "type": "number",
+      "default": 0
+    },
+    "following_count": {
+      "type": "number",
+      "default": 0
+    },
+    "posts_count": {
+      "type": "number",
+      "default": 0
+    },
+    "likes_received": {
+      "type": "number",
+      "default": 0
+    },
+    "views_total": {
+      "type": "number",
+      "default": 0
+    },
+    "is_private": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "user_id",
+    "username"
+  ]
+}
